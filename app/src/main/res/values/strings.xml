@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Adjo</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="user_commerce">Commerce</string>
+    <string name="user_nom">Nom</string>
+    <string name="user_prenom">Prenom</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close  navigation drawer</string>
+    <string name="chiffre_affaire">Chiffre d\'affaire</string>
+    <string name="ventes_credit">Ventes à Crédit</string>
+    <string name="ventes_comptant">Vente au comptant</string>
+    <string name="rentabilite">Rentabilite</string>
+    <string name="depense">Dépenses</string>
+
+
+
+
+
+
+
+
+
+    <string name="moov">Moov</string>
+    <string name="mtn">MTN</string>
+
+    <string name="pref_send_report">Send crash reports</string>
+    <string name="pref_send_report_summary">Helps to fix bugs</string>
+    <string name="pref_sync_frequency">Sync frequency</string>
+    <string name="pref_sync_frequency_summary">Set the sync frequency</string>
+    <string name="pref_user_name">Set username</string>
+    <string name="pref_user_name_summary">Set your username</string>
+
+    <string name="pref_user_profile">User Profile</string>
+    <string name="pref_update_setting">Update Settings</string>
+
+
+    <string-array name="syncFrequency">
+        <item name="1">Once a day</item>
+        <item name="7">Once a week</item>
+        <item name="30">Once a year</item>
+        <item name="0">Never (Update maually)</item>
+    </string-array>
+    <string-array name="syncFrequencyValues">
+        <item name="1">1</item>
+        <item name="7">7</item>
+        <item name="30">30</item>
+        <item name="0">0</item>
+    </string-array>
+
+    <string name="pref_theme">Thème</string>
+    <string name="pref_theme_summary">Choisir ici le thème de votre application</string>
+
+    <string-array name="theme">
+        <item name="defaul">Par défaut</item>
+        <item name="dracula">Dracula</item>
+        <item name="forest">Forest</item>
+        <item name="groove">Groove</item>
+    </string-array>
+    <string-array name="themeValues">
+        <item name="defaul">defaut</item>
+        <item name="dracula">dracula</item>
+        <item name="forest">forest</item>
+        <item name="groove">groove</item>
+    </string-array>
+
+</resources>

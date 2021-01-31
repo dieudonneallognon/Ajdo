@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Edit"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal"
+        android:text="Edition / Ajout"
+        android:textColor="#FF9800"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="30dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:paddingVertical="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <RadioButton
+                    android:id="@+id/investissement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="Investissement" />
+
+                <RadioButton
+                    android:id="@+id/depense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dépense"
+                    android:fontFamily="casual"/>
+
+                <RadioButton
+                    android:id="@+id/vente_comptant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vente comptant"
+                    android:fontFamily="casual"/>
+
+                <RadioButton
+                    android:id="@+id/vente_credit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vente à crédit"
+                    android:fontFamily="casual"/>
+
+                <RadioButton
+                    android:id="@+id/remboursement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remboursement"
+                    android:fontFamily="casual"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/operation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:backgroundTint="#BEFF9800"
+            android:inputType="textFilter"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:hint="Operation"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHighlight="#E4E03515"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginVertical="10dp"/>
+
+        <EditText
+            android:id="@+id/somme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#BEFF9800"
+            android:capitalize="sentences"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:hint="Somme"
+            android:inputType="numberDecimal"
+
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHighlight="#E4E03515"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/date"
+            android:onClick="date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#BEFF9800"
+            android:capitalize="sentences"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:hint="Date de l'operation"
+            android:inputType="date"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHighlight="#E4E03515"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="InvalidId"
+            android:focusable="false"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="Valider"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#9AFFFFFF"
+            android:id="@+id/btn_valider"
+            android:onClick="valider"/>
+
+    </LinearLayout>
+
+</LinearLayout>
